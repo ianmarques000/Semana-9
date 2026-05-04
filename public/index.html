@@ -9,19 +9,29 @@
 <body>
 
   <header>
-    <h1>Catálogo de Produtos</h1>
+    <h1>Mini Ecommerce</h1>
   </header>
 
   <main>
 
-    <section id="filtros">
+    <section id="controles">
+      <input id="search" type="text" placeholder="Buscar produto..." />
 
+      <select id="category">
+        <option value="todas">Todas</option>
+        <option value="Celulares">Celulares</option>
+        <option value="Notebooks">Notebooks</option>
+        <option value="Acessórios">Acessórios</option>
+        <option value="Games">Games</option>
+      </select>
+
+      <button id="btnRender">Renderizar</button>
     </section>
 
+    <div id="product-list"></div>
 
-    <section id="catalogo">
+    <div id="product-details"></div>
 
-    </section>
   </main>
 
   <script src="script.js"></script>
