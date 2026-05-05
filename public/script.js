@@ -37,6 +37,7 @@ function createProductCard(p) {
 function renderProducts(lista) {
   productList.innerHTML = "";
   lista.forEach(p => productList.appendChild(createProductCard(p)));
+  document.querySelectorAll(".card").forEach(card => console.log("card id:", card.getAttribute("data-id")));
 }
 
 function renderCategories() {
